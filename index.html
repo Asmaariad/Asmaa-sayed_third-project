@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>B.S_project</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+         <link rel="stylesheet" href="./css/style.css">
+         <link rel="stylesheet" href="css/all.css">
+        
+    </head>
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+            <div class="container-fluid ">
+                <img class="border rounded-circle" src="./images/palestine.png" alt="#"  width="50px" height="50px">
+              <a class="navbar-brand  ms-4 pe-2 border-end border-2 fs-4" style="color: rgb(8, 59, 8);" href="#">PALESTINE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-info" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class=" trip nav-link dropdown-toggle text-info  border border-2 rounded-3 border-info" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Trips
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item text-dark" href="#">Al-Aqsa Mosque</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">Church of the Nativity</a></li>
+                      <li><hr class="dropdown-divider text-dark"></li>
+                      <li><a class="dropdown-item text-dark" href="#">Garden of Gethsemane</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">Kidron Valley</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">Bilal Mosque</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">Church of the Resurrection</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">More</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-info" href="#" tabindex="-1" aria-disabled="true">About</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                  <div class="row mt-1 ms-1 mt-1">
+                  <button class="btn btn-outline-light col-2 col-md-5 text-center me-2 bg-info border rounded-3" type="submit" style="width: 70px;">Search</button>
+                  <button  class="btn btn-outline-light col-2 col-md-5 text-center  bg-info border rounded-3 " style="width: 65px;" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button> 
+                  </div>
+
+                  <div class="modal fade"  id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="  modal-dialog " >
+                        <div class="  modal-content ">
+                            <div class="  modal-header bg-info">
+                                <h5 class="modal-title text-light " id="loginModalLabel"> Login </h5>
+                                <button type="button" class="btn-close bg-info border" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label text-info"> Email address</label>
+                                        <input type="email" class="form-control border rounded-3 border-info" id="email" required>
+                                        <p>we'll never share your email with anyone else.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label text-info">Password </label>
+                                        <input type="password" class="form-control border rounded-3 border-info" id="password" required>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-primary" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+                                      </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info me-auto"  data-bs-dismiss="modal">Login</button>
+                                <button type="button" class="btn btn-info"> Close</button>
+                            </div>
+                        </div> <!-- modal-content -->
+                    </div> <!-- modal-dialog -->
+                </div> <!--modal fade  -->
+              </div><!-- container-fluid -->
+          </nav>
+
+          <!-- ///////////////////////////////// sec 1 /////////////////////////////////// -->
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/638603630003071850.jpg" class=" img1 d-block  "  alt="Al-Aqsa Mosque">
+                <div class="carousel-caption  d-md-block ">
+                  <h5>Al-Aqsa Mosque</h5>
+                  <p >It is the first of the two qiblahs and the third of the two holy shrines.</p>
+                  <button class="bg-info border-0 rounded text-light"> Visit Us </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Church_of_the_Nativity.webp" class=" img1 d-block "  alt="Church_of_the_Nativity">
+                <div class="carousel-caption  d-md-block">
+                    <h5>Church of the Nativity</h5>
+                    <p >The Church of the Nativity is one of the oldest churches in the Holy Land.</p>
+                    <button class="bg-info border-0 rounded text-light"> Visit Us </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Garden_of_Gethsemane.jpg" class="img1 d-block" alt="Garden_of_Gethsemane">
+                <div class="carousel-caption  d-md-block">
+                    <h5>Garden of Gethsemane</h5>
+                    <p >The Church of All Nations is located at the foot of the Mount of Olives.</p>
+                    <button class="bg-info border-0 rounded text-light"> Visit Us </button>
+                </div>
+              </div>
+              <div class="carousel-item w-100">
+                <img src="./images/Kidron_Valley.webp" class="img1 d-block " alt="Kidron_Valley">
+                <div class="carousel-caption  d-md-block">
+                    <h5>Kidron Valley</h5>
+                    <p >The Kidron Valley separates the Mount of Olives from the city of Jerusalem.</p>
+                    <button class="bg-info border-0 rounded text-light"> Visit Us </button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="icons " style="position: fixed;">
+            <ul class="ul_icons col-sm-6 col-md-3 " >
+             <div class="ico1 rounded-1  my-4 " > <i class="fab fa-facebook-f "></i></div>
+             <div class="ico1 rounded-1  " > <i class="fab fa-whatsapp"></i></div> 
+             <div class="ico1 rounded-1  my-4" > <i class="fab fa-twitter"></i></div> 
+             <div class="ico1 rounded-1  " > <i class="fab fa-linkedin-in"></i></div> 
+             <div class="ico1 rounded-1  my-4" > <i class="fab fa-instagram"></i></div> 
+            </ul>
+          </div> 
+
+          
+
+          <!-- //////////////////////////// sec2 /////////////////////////////////// -->
+
+          <div class="container-fluid  rounded-bottom" style=" background-color: rgb(75, 198, 204);">
+            <h4 class="text-success" >WELCOME</h4>
+            <p class="text-light " >Are you planning to visit Palestine? we offer the ultimute tour in palestine, covering Al-Aqsa Mosque, Kidron Valley from a one day trip to 10 day dream vacation, we will take care of all you needs book hotel 25/7 Customer Service.</p>
+            <button  class="btn11  text-info border-0 rounded " style="height: 30px;" >Learn more</button>
+            <br> <br>
+          </div>
+          <hr>
+          <div class="container-fluid  rounded" style="height: 150px; background-color: rgb(54, 141, 146);">
+          <h2 class="  p-5 text-center fs-1" style="color: rgb(37, 90, 50);" >Popular destination in Palestine</h2>
+          </div>
+
+          <div class="accordion accordion-flush  mt-3  rounded " id="accordionFlushExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="shadow-lg z-3 accordion-button collapsed border rounded-3 border-1 text-success fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Al-AQSA MOSQUE
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  The Dome of the Rock Mosque is located in the Islamic Quarter in the Old City, and it is part of the Holy Mosque. The rock refers to the place from which the Prophet Muhammad, may God bless him and grant him peace, ascended to the highest heaven.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="shadow-lg z-2 accordion-button collapsed border border-0 text-success fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" >
+                  KIDRON VALLEY
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The Kidron Valley separates the Mount of Olives from the city of Jerusalem. Jesus crossed this valley many times, including on Holy Thursday evening when he went with his disciples to the Garden of Gethsemane.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="shadow-lg z-1 accordion-button collapsed border rounded-3 border-1 text-success fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  GARDEN OF GETHSEMANE
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The Church of All Nations is located at the foot of the Mount of Olives. The first church was built in the Byzantine period in 379 AD, over the site where Jesus Christ prayed the last prayer and suffered, so the place became holy. The current church is considered one of the most beautiful churches in the city of Jerusalem, It was built between 1919 and 1924, and was called the Church of All Nations due to the contribution of sixteen European countries to its construction.</div>
+              </div>
+            </div>
+          </div>
+           <hr>
+          <!-- ///////////////////////////////////////////sec 3 ///////////////////////////////// -->
+          <div class="container-fluid  rounded" style=" background-color: rgb(54, 141, 146);">
+            <h2 class=" text-light p-3 text-center">Translate From Arabic To English</h2>
+          </div>
+          <div class="container-fluid text-light  rounded-bottom" style="height: 250px; background-color: rgb(75, 198, 204);">
+          
+            <p class=" p1 ms-1 fs-5">Write and Translate <code class="text-success fs-5">Press Here</code> </p>
+
+              
+            <button id="myButton" type="button" class="btn btn-light ms-1"  data-bs-toggle="tooltip" data-bs-placement="right"  title="Copied">Copy</button>
+            
+            <textarea class="  mt-4 rounded-2 border-0 col-12" placeholder=" translate:" cols="170" rows="5"  name="" id=""></textarea>
+
+          </div>
+          <hr>
+          
+          <div class="container-fluid  rounded" style=" background-color: rgb(54, 141, 146);">
+            <h2 class=" text-light p-3 text-center">Translate From Arabic To French</h2>
+          </div>
+          <div class="container-fluid text-light  rounded-bottom" style="height: 250px; background-color: rgb(75, 198, 204);">
+            <p class=" p1 ms-1 fs-5">Write and Translate <code class="text-success fs-5">Press Here</code> </p>
+
+              
+            <button id="myButton2" type="button" class="btn btn-light ms-1" 
+        data-bs-toggle="tooltip2" 
+        data-bs-placement="right" 
+        title="Copied">
+    Copy
+     </button>
+     <textarea class="  mt-4 rounded-2 border-0 col-12" placeholder=" translate:" cols="170" rows="5"  name="" id=""></textarea>
+          </div>
+          <hr>
+
+          <div class="container-fluid rounded" style=" background-color: rgb(54, 141, 146);">
+            <h2 class=" text-light p-3 text-center">Translate From Arabic To German</h2>
+          </div>
+          <div class="container-fluid text-light  rounded-bottom" style="height: 250px; background-color: rgb(75, 198, 204);">
+            <p class=" p1 ms-1 fs-5">Write and Translate <code class="text-success fs-5">Press Here</code> </p>
+
+              
+            <button id="myButton3" type="button" class="btn btn-light ms-1" 
+        data-bs-toggle="tooltip3" 
+        data-bs-placement="right" 
+        title="Copied">
+    Copy
+     </button>
+     <textarea class="  mt-4 rounded-2 border-0 col-12" placeholder=" translate:" cols="170" rows="5"  name="" id=""></textarea>
+          </div>
+          <hr>
+          <!-- /////////////////////////////sec 4 /////////////////////////////// -->
+           <div class="container_img container-fluid bg-info border " style="height: 50vh;"></div> <!-- container_img -->
+           <!-- /////////////////////////////sec 5 ////////////////////////////////// -->
+          <div class="container-fluid  rounded p-1 text-center fs-2 " style="  background-color: rgb(54, 141, 146); color: rgb(37, 90, 50);" > POPULAR DESTINATIONS IN PALESTINE</div>
+
+         
+
+            <div class="container my-5 bg-light">
+
+            <div class="row row11" style="grid-column-gap: 142px;">
+
+              <div class="card card1  col-12 col-sm-6 col-md-3 " style="height: 450px;">
+                <img class="card-img-top w-100 " src="./images/card1.png" alt="Card image" style="height: 350px;">
+                <div class="card-body ">
+                  <h5 class="card-title text-success" style="display: inline-block;">JERUSALEM</h5>
+                  <a href="#" class="btn  btn_card btn-success " >Know More</a>
+                  <p class="card-text text-success">Capital Of Palestine</p>
+                </div>
+              </div>
+
+              <div class="card card1  col-12 col-sm-6 col-md-3 " style="height: 450px;">
+                <img class="card-img-top " src="./images/card2.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title text-success" style="display: inline-block;">JAFFA</h5>
+                  <a href="#" class="btn btn_card btn-success" >Know More</a>
+                  <p class="card-text text-success">Bride Of The Sea</p>
+                </div>
+              </div>
+
+              <div class="card card1  col-12 col-sm-6 col-md-3 " style="height: 450px;">
+                <img class="card-img-top w-100" src="./images/card3.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title text-success" style="display: inline-block;">GAZA</h5>
+                  <a href="#" class="btn btn_card btn-success" >Know More</a>
+                  <p class="card-text text-success">The Lady Of Seas</p>
+                </div>
+              </div>
+              
+              <div class="card card1 col-12 col-sm-6 col-md-3 " style="height: 450px;">
+                <img class="card-img-top w-100" src="./images/card4.webp" alt="Card image" style="height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title text-success" style="display: inline-block;">NABLUS</h5>
+                  <a href="#" class="btn btn_card btn-success" >Know More</a>
+                  <p class="card-text text-success">Queen Of Palestine</p>
+                </div>
+              </div>
+
+              <div class="card card1 col-12 col-sm-6 col-md-3 " style="height: 450px;">
+                <img class="card-img-top w-100" src="./images/card5.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title text-success" style="display: inline-block;">AKKA </h5>
+                  <a href="#" class="btn btn_card btn-success" >Know More</a>
+                  <p class="card-text text-success">Hot Sand Country</p>
+                </div>
+              </div>
+
+              <div class="card card1 col-12 col-sm-6 col-md-3 " style="height: 450px;">
+                <img class="card-img-top w-100" src="./images/card6.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title text-success" style="display: inline-block;">HEBRON</h5>
+                  <a href="#" class="btn btn_card btn-success" >Know More</a>
+                  <p class="card-text text-success">Global Craft City</p>
+                </div>
+              </div>
+
+              <div class="row " style="justify-content: space-evenly;">
+                
+
+              <div class="card card1 col-12 col-sm-6 col-md-3 " style="height: 450px;">
+                <img class="card-img-top  w-100" src="./images/card7.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title text-success" style="display: inline-block;" >BETHLEHEM</h5>
+                  <a href="#" class="btn btn_card btn-success" >Know More</a>
+                  <p class="card-text text-success">Galilean City</p>
+                </div>
+              </div>
+
+
+              <div class="card card1 col-12 col-sm-6 col-md-3 " style="height: 450px;">
+                <img class="card-img-top w-100" src="./images/card8.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-body" >
+                  <h5 class="card-title text-success" style="display: inline-block;">KHAN YUNIS</h5>
+                  <a href="#" class="btn btn_card btn-success" >Know More</a>
+                  <p class="card-text text-success">Largest City In Gaza</p>
+                </div>
+              </div>
+            </div>
+            </div> <!-- row -->
+          </div>
+          <!-- ////////////////////////////////// sec 6 ////////////////////////////// -->
+          <div class="container_img2 container-fluid bg-info border " style="height: 50vh;"></div> <!-- container_img2 -->
+          <hr>
+           <!-- ////////////////////////////////// sec 7 ////////////////////////////// -->
+           <div class="container-fluid rounded p-1 text-center fs-2 " style=" background-color: rgb(54, 141, 146); color: rgb(37, 90, 50);" > THANKS FOR</div>
+          
+           <div class="container mt-5">
+
+            <div class="row row11 " style="justify-content: space-evenly;">
+
+              <div class="card img-fluid img_thanks col-12 col-sm-6 col-md-4 col-lg-3  rounded-4" style="height: 350px;">
+                <img class="card-img-top " src="./images/ismail.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-img-overlay">
+                  <div class="parent">
+                  <p class="p_overlay card-text fs-5 text-info">All thanks and appreciation</p>
+                  <i class="i_overlay far fa-clock fs-6 text-info">  Novaber 5, 2024 </i>
+               <div class="pill " ></div>
+               <p class="text-info ms-3">Ismaila Haniyeh"Abu Al-Abd:)"  Palestinian politician</p>
+               </div> <!-- parent -->
+                </div> <!-- card-img-overlay -->
+              </div> <!-- card -->
+
+              <div class="card img-fluid img_thanks col-12 col-sm-6 col-md-4 col-lg-3 col-sm-6  rounded-4" style="height: 350px;">
+                <img class="card-img-top " src="./images/yahia.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-img-overlay">
+                  <div class="parent">
+                  <p class="p_overlay card-text fs-5 text-info">All thanks and appreciation</p>
+                  <i class="i_overlay far fa-clock fs-6 text-info">  Novaber 5, 2024 </i>
+               <div class="pill pill2" ></div>
+               <p class="text-info ms-3">Yahya Ibrahim Hassan"Sinwar:)"  Palestinian politician</p>
+               </div> <!-- parent -->
+                </div> <!-- card-img-overlay -->
+              </div> <!-- card -->
+
+              <div class="card img-fluid img_thanks col-12 col-sm-6 col-md-4 col-lg-3 col-sm-6 rounded-4" style="height: 350px;">
+                <img class="card-img-top " src="./images/71110071-dca0-4f22-a_1686_094044.jpg" alt="Card image" style="height: 350px;">
+                <div class="card-img-overlay">
+                  <div class="parent">
+                  <p class="p_overlay card-text fs-5 text-info">All thanks and appreciation</p>
+                  <i class="i_overlay far fa-clock fs-6 text-info">  Novaber 5, 2024 </i>
+               <div class="pill pill3" ></div>
+               <p class="text-info ms-3">Abu Obaida"Abu Obaida:)" Palestinian activist</p>
+               </div> <!-- parent -->
+                </div> <!-- card-img-overlay -->
+              </div> <!-- card -->
+            </div> <!-- row -->
+          </div> <!-- container -->
+          <br> <br> <br>
+          <hr class="mt-5 ">
+          <!-- /////////////////////////////////////////////// sec8 //////////////////////////////////// -->
+          <h2 class="mt-5 text-success" style="text-align: center;">PALESTINE NEWS</h2>
+
+          <div class="container con_clip">
+          <div class="card  card_clip shadow-lg" style="max-width: 100%; background-color: rgb(228, 222, 222);" >
+            <div class="row g-0 row_img">
+              
+              <div class=" col-md-8 order-md-1 order-sm-2 order-2">
+                <div class="card-body  ">
+                  <h5 class="card-title">القدس الشريف</h5>
+                  <i class="fas fa-calendar-alt i_clip">mon, may 25th 2024</i>
+                  <div class="line_title1  " ></div>
+                  <br>
+                  <p class="card-text">أنا القبلة الأولى ومهد العبادات
+                    أنا المسجد الأقصى وبيت النبوات
+                    لقد بارك الرحمن حولي فهل
+                    صنتموا وحي وسرتم بآياتي
+                    هنا صخرتي ثكلى هنا قبلتي بكت
+                    فقد دنس الشذاذ أرضي وساحاتي
+                    لقد احرقوا عرشي وقد أهرقوا دمي
+                    وكم أطفأوا نوري وداسوا قداستي
+                    فيا أمتي إن لم تذودوا وتدفعوا
+                    فلا كنتموا أهلا لتلك الرسالات</p>
+                  <br><br><br>
+                  <button class=" btn_news1 border rounded-2 "><i class="fas fa-tag"></i> Podcast</button>
+                  <button class="btn_news1 border rounded-2 "><i class="fas fa-clock"></i> 55 mins</button>
+                  <button class="btn_news1 btn_news2 border rounded-2 "><i class="fas fa-play"></i> Episode</button>
+                </div>
+              </div>
+              <div class=" img_card_r col-md-4 order-md-1 order-sm-1 order-1">
+                <img src="./images/70058bbde269d8451fc607da2ea03f29.jpg" class=" img_card_r img-fluid rounded-end w-100 " style="height: 100%; " alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="container con_clip">
+          <div class="card  card_clip shadow-lg " style="max-width: 100%; background-color: rgb(228, 222, 222);" >
+            <div class="row g-0 ">
+              <div class="col-md-4 img_clip_l">
+                <img src="./images/638603630003071850.jpg" class=" img_clip_l img-fluid rounded-start w-100 " style="height: 100%;" alt="...">
+              </div>
+              <div class="col-12 col-sm-6 col-md-8 ">
+                <div class="card-body ">
+                  <h5 class="card-title">القدس الشريف</h5>
+                  <i class="fas fa-calendar-alt i_clip">mon, may 25th 2024</i>
+                  
+                  <div class="line_title1  " ></div>
+                  <br>
+                  <p class="card-text">عادت اغاني العرس رجـع نواح **** ونعـيـت بيــن معــــالم الافـــــــــــراح
+
+                    كفنت في ليل الـــزفـــاف بثوبــه **** ودفـنــت عنـــد تبلـج الإصـبـــــــــــاح
+                    
+                    شيعت من هلــع بعـبــرة ضاحـك **** فـي كــل ناحيــة وسكـــرة صـــــــــاح
+                    
+                    ضجـت عليـك مـــآذن ومنابــــــر **** وبكـــت عليـك ممــالـك ونـــــــــــواح
+                    
+                    الهنـد والهـة ومصـــر حـزيـنــــة **** تبكـــي عليـك بمـدمــع سحـــــــــــاح
+                    
+                    والشـام تسأل والعــراق وفــارس **** أمحــا من الارض الخـلافـة مـــــــاح؟!
+                    
+                    وأتت لك الجمع الجـلائـل مــأتــما **** فـقعـدن فـيـه مـقـاعـــد الأنــــــــواح
+                    
+                    يــا للـرجــال لحُـــرة مـــــــوؤودة **** قتلــت بغيــــر جــريـرة وجنــــــــاح
+                    
+                    إن الذين أســـت جراحك حربهـــم **** قتلتـك سلمهمــو بغيــــر جــــــــراح
+                    
+                    هتكــوا بأيـــديهم ملاءة فخـرهـــم **** مـوشــيـــة بـمــواهـب الفـتـــــــــاح
+                    
+                    نـزعوا عــن الأعناق خيـر قـــلادة **** ونضوا عن الأعطاف خير وشـــاح
+                 </p>
+                  <br>
+                  <button class=" btn_news1 border rounded-2 "><i class="fas fa-tag"></i> Podcast</button>
+                  <button class="btn_news1 border rounded-2 "><i class="fas fa-clock"></i> 55 mins</button>
+                  <button class="btn_news1 btn_news2 border rounded-2 "><i class="fas fa-play"></i> Episode</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container con_clip">
+          <div class="card  card_clip shadow-lg " style="max-width: 100%; background-color: rgb(228, 222, 222);">
+            <div class="row g-0 ">
+              <div class=" col-md-8 order-md-1 order-sm-2 order-2 ">
+                <div class="card-body ">
+                  <h5 class="card-title">القدس الشريف</h5>
+                  <i class="fas fa-calendar-alt i_clip">mon, may 25th 2024</i>
+                  
+                  <div class="line_title1  " ></div>
+                  <br>
+                  <p class="card-text">حسـب أتـــى طول الليـالــي دونـــه **** قـد طــاح بيـن عشيــة و صــبــــــاح
+
+                    وعـلاقــة فصمـت عـــرى أسبـابها **** كـانـــت أبــــر عــــلائــــــق الأرواح
+                    
+                    جمعــت عـلى البـر الحضـور وربما **** جـمعـت عـلـيه سـرائـر الـنـــــــزاح
+                    
+                    نظمت صفوف المسلمين و خطوهم **** فـي كــل غـدوة جـمعــــــــة و رواح
+                    
+                    بكــت الصــلاة و تلــك فتنــة عــابث **** بالشــرع عــربيد القضاء وقـــــاح
+                    
+                    أفــتى خـزعبلــــة و قــــال ضــلالــة **** وأتــى بكفــر فــي البــلاد بــــــواح
+                    
+                    إن الـذيـــن جــرى عـليـهـم فـقـهـــه **** خـلـقـوا لـفـقــه كـتـيـبـة وســـــلاح
+                    
+                    إن حـدثـوا نطـقـوا بخــرس كتـائـب **** أو خـوطـبـوا سـمعوا بصم رمــــاح
+                    
+                    أسـتـغـفـر الأخــلاق لـســت بـجـاحد **** مـن كـنـت أدفـع دونــه و ألاحــــــي
+                    
+                    مـــال أطــوقــــه المـــلام وطــالمــا **** قـلـدتــه المــأثــور مـن أمــداحــــي
+                    
+                    </p>
+                  <br>
+                  <button class=" btn_news1 border rounded-2 "><i class="fas fa-tag"></i> Podcast</button>
+                  <button class="btn_news1 border rounded-2 "><i class="fas fa-clock"></i> 55 mins</button>
+                  <button class="btn_news1 btn_news2 border rounded-2 "><i class="fas fa-play"></i> Episode</button>
+                </div>
+              </div>
+              <div class="col-md-4 order-md-1 order-sm-1 order-1  img_card_r">
+                <img src="./images/3.jpg" class=" img_card_r img-fluid rounded-end w-100 " style="height: 100%; " alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container con_clip">
+          <div class="card  card_clip shadow-lg " style="max-width: 100%; background-color: rgb(228, 222, 222);">
+            <div class="row g-0 ">
+              <div class="col-md-4 img_clip_l">
+                <img src="./images/640.png" class=" img_clip_l img-fluid rounded-start w-100 " style="height: 100%;" alt="...">
+              </div>
+              <div class="col-12 col-sm-6 col-md-8 ">
+                <div class="card-body ">
+                  <h5 class="card-title">القدس الشريف</h5>
+                  <i class="fas fa-calendar-alt i_clip">mon, may 25th 2024</i>
+                  
+                  <div class="line_title1  " ></div>
+                  <br>
+                  <p class="card-text">هــو ركــن مـمـلـكـة و حــائط دولــة **** وقـريع شـهـبـاء و كبش نطــــــاح
+
+                    أأقــول مـن أحـيـا الـجـمـاعـة مـلحـد **** وأقـول مـن رد الحقــوق إباحـــــي
+                    
+                    الحــق أولــى مــن ولـيـك حـــرمــة **** وأحــــق منك بنصرة وكفـــــــــاح
+                    
+                    فـامدح عـلى الحق الرجال و لمهموا **** أو خــل عـنك مواقــف النصــــــاح
+                    
+                    و مـن الـرجال اذا انبـريت لهــدمهـم **** هـرم غـليـظ مـناكــب الصفــــــــاح
+                    
+                    فــإذا قـذفـت الحــق فــي أجــــــــلاده **** ترك الصراع مضعضع الألـــــــواح
+                    
+                    أدوا الى الغازي النصيحــة ينتصــح **** إن الجــواد يثـــوب بعـد جـمــــــاح
+                    
+                    إن الغــرور سـقــى الـرئيـس براحــه **** كيـف احتيالك في صريع الــــــراح
+                    
+                    نـقـل الشـرائـع و العـقـائـد والقــرى **** والنـاس نقل كتائب في الســــــاح
+                    
+                    تــركتــه كـالـشـبــح المـــؤلـه أمــــة **** لـم تســل بعــد عبــادة الأشبــــــاح</p>
+                  <br>
+                  <button class=" btn_news1 border rounded-2 "><i class="fas fa-tag"></i> Podcast</button>
+                  <button class="btn_news1 border rounded-2 "><i class="fas fa-clock"></i> 55 mins</button>
+                  <button class="btn_news1 btn_news2 border rounded-2 "><i class="fas fa-play"></i> Episode</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <br>
+        <h2 class="text-center">JOIN US</h2>
+       
+        <div class="container " >
+        <div class="row text-center" style="justify-content: space-evenly; grid-row-gap: 30px;">
+          <div class="div1 border rounded-1 text-center shadow-lg bg-light col-12 col-sm-6 col-md-4 col-lg-3" style="width: 250px;" >
+            <h4 class="text-center mt-2" >Subscribe Now</h4> 
+            <img class="img_footer mb-2 shadow-lg " src="./images/twitter2.jpg" alt=""> 
+            <p>Go to link</p>
+           </div>
+           <div class="div1 border rounded-1 text-center shadow-lg bg-light col-12 col-sm-6 col-md-4 col-lg-3" style="width: 250px;" >
+             <h4 class="text-center mt-2" >Follow</h4> 
+            <img class="img_footer mb-2 shadow-lg bg-dark border rounded-4" src="./images/whats222-removebg-preview.png" alt=""> 
+            <p>Go to link</p>
+           </div>
+           <div class="div1 border rounded-1 text-center shadow-lg bg-light col-12 col-sm-6 col-md-4 col-lg-3" style="width: 250px;" >
+            <h4 class="text-center mt-2" >Like the page</h4> 
+           <img class="img_footer mb-2 shadow-lg bg-info border rounded-4" src="./images/linkedin2.png" alt=""> 
+           <p>Go to link</p>
+          </div>
+          <div class="div1 border rounded-1 text-center shadow-lg bg-light col-12 col-sm-6 col-md-4 col-lg-3" style="width: 250px;" >
+            <h4 class="text-center mt-2" >Watch videos</h4> 
+           <img class="img_footer mb-2 shadow-lg bg-dark border rounded-4" src="./images/insta.png" alt=""> 
+           <p>Go to link</p>
+          </div>
+        </div> <!-- row -->
+      </div> <!-- container -->
+      <br>
+
+      <!-- ////////////////////////////////////////////// footer ////////////////////////////////////// -->
+
+    <div class="container-fluid footer  " style=" background-color: rgb(54, 141, 146);">
+      
+        <div class="row">
+          <div class="col mt-2 text-center">
+            <div class="fline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+            <img class="border rounded-circle  bg-light m-2 "  src="./images/palestine.png" alt="#"  width="60px" height="60px">
+          <h5  style="display: inline; color: white;" >Good Company</h5>
+          <div class="lline   border col-3 ms-3 " style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+          <p class="text-center text-light">Tel: 0000 000 0000</p>
+         <p class="text-center text-light">Address: Palestine</p> 
+          <p class="text-center text-light">Fax: 000000000000</p>
+          </div> 
+          <div class="col mt-2 text-center">
+            <div class="fline  border   col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+            <img class="border rounded-circle  bg-light m-2" src="./images/palestine.png" alt="#"  width="60px" height="60px">
+          <h5 class=" " style="display: inline; color: white;">Important Links</h5>
+          <div class="lline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+          <p class=" p_footer text-center ">Visit us</p>
+         <p class="p_footer text-center ">Take alook</p> 
+          <p class="p_footer text-center ">your health is more important</p>
+          </div>
+          
+          <div class="col mt-2 text-center">
+            <div class="fline  border   col-3 ms-3" style="width:400px; height: 2px; color: rgb(207, 203, 203);"></div>
+            <img class="border rounded-circle bg-light m-2 " src="./images/palestine.png" alt="#"  width="60px" height="60px">
+          <h5 class=" " style="display: inline; color: white;">Vision</h5>
+          <div class="lline  border col-3 ms-3" style="width: 400px; height: 2px; color: rgb(207, 203, 203);"></div>
+          <p class="text-center text-light">Services for all</p>
+         <p class="text-center text-light">Provide best Services</p> 
+          <p class="text-center text-light">You will be better than before</p>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center fs-5" style="text-transform: uppercase; color: rgb(73, 68, 68);">Copyright &copy; 2024 Asmaa Elsayed good company. All Rights</p> 
+        <hr>
+        <br><br>
+    </div> 
+
+   
+
+    
+
+
+    
+
+   
+    
+    
+    
+    <script  src="js/script.js"></script>
+   
+    </body>
+</html>
